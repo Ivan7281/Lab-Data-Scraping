@@ -1,4 +1,4 @@
-# Scrapy settings for lab2 project
+# Scrapy settings for Lab2 project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "lab2"
+BOT_NAME = "Lab2"
 
-SPIDER_MODULES = ["lab2.spiders"]
-NEWSPIDER_MODULE = "lab2.spiders"
+SPIDER_MODULES = ["Lab2.spiders"]
+NEWSPIDER_MODULE = "Lab2.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "lab2.middlewares.Lab2SpiderMiddleware": 543,
+#    "Lab2.middlewares.Lab2SpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "lab2.middlewares.Lab2DownloaderMiddleware": 543,
+#    "Lab2.middlewares.Lab2DownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "lab2.pipelines.Lab2Pipeline": 300,
+#    "Lab2.pipelines.Lab2Pipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

@@ -6,16 +6,17 @@
 import scrapy
 
 
-class CatalogItem(scrapy.Item):
-    title = scrapy.Field()
+class FacultyItem(scrapy.Item):
+    name = scrapy.Field()
     url = scrapy.Field()
 
-class ListingItem(scrapy.Item):
-    title = scrapy.Field()
-    url = scrapy.Field()
-    catalog = scrapy.Field()
 
-class SmartfonItem(scrapy.Item):
-    title = scrapy.Field()
-    catalog = scrapy.Field()
-    pass
+class DepartmentItem(scrapy.Item):
+    name = scrapy.Field()
+    url = scrapy.Field()
+    faculty = scrapy.Field()
+
+
+class StaffItem(scrapy.Item):
+    name = scrapy.Field()
+    department = scrapy.Field()
