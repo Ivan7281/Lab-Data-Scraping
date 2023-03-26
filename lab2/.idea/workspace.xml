@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="033e2ecc-0c94-44ed-a65d-8c473c8306d5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="ae8f96f7-5cfa-4a8c-b824-27e5053c6f51" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/spiders/foxtrot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/spiders/onu.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/spiders/onu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +20,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2NEnaHVpJwcHzsAuH38tDtDrO6D" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2NYAKV3ra30rHi3s1aSjWgFJUDH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,15 +37,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="033e2ecc-0c94-44ed-a65d-8c473c8306d5" name="Changes" comment="" />
-      <created>1679238175010</created>
+      <changelist id="ae8f96f7-5cfa-4a8c-b824-27e5053c6f51" name="Changes" comment="" />
+      <created>1679830578152</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1679238175010</updated>
+      <updated>1679830578152</updated>
     </task>
     <servers />
   </component>

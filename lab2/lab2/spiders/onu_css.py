@@ -1,21 +1,20 @@
 import scrapy
-from bs4 import BeautifulSoup
 from Lab2.items import FacultyItem, DepartmentItem, StaffItem
 
 
-class OnuSpider(scrapy.Spider):
-    name = "onu"
+class OnuCssSpider(scrapy.Spider):
+    name = "onu_css"
     allowed_domains = ["onu.edu.ua"]
     start_urls = ["https://onu.edu.ua/uk/structure/faculty"]
 
     def parse(self, response):
-        soup = BeautifulSoup(response.body, "html.parser")
-        fac_list = soup.find(class_="table table-striped table-hover")
-        for tr in fac_list.find_all("tr"):
-            a = tr.find("a")
-            if a:
-                fac_name = a.find(string=True, recursive=False)
-                fac_url = f"https://onu.edu.ua{a.get('href')}"
+        fac_list = response.css('table.table').css('tr')
+
+        for tr in fac_list:
+            fac_name = tr.css('a::text').get()
+            fac_url = f"https://onu.edu.ua{tr.css('a::attr(href)').get()}"
+
+            if fac_name:
                 yield FacultyItem(
                     name=fac_name,
                     url=fac_url
@@ -31,32 +30,28 @@ class OnuSpider(scrapy.Spider):
                 )
 
     def parse_faculty(self, response):
-        soup = BeautifulSoup(response.body, "html.parser")
-        dep_list = soup.find(name="article", class_="item-page")
+        dep_list = response.css('article.item-page').css('p')
 
-        for p in dep_list.find_all("p"):
-            a = p.find("a")
-            strong = p.find("strong")
-            span = p.find("span")
-            dep_name = a.find(string=True, recursive=False)
-            dep_url = f"https://onu.edu.ua{a.get('href')}"
+        for p in dep_list:
+            dep_name = p.css('a::text').get()
+            dep_url = f"https://onu.edu.ua{p.css('a::attr(href)').get()}"
 
             if dep_url[32:39] == "faculty" and dep_name:
+
                 yield DepartmentItem(
                     name=dep_name,
                     url=dep_url,
                     faculty=response.meta.get("faculty")
                 )
-
                 yield scrapy.Request(
-                    url=dep_url + "/staff",
+                    url=dep_url + "/spivrobitnyky",
                     callback=self.parse_department,
                     meta={
                         "department": dep_name
                     }
                 )
             else:
-                dep_name = strong.find(string=True, recursive=False)
+                dep_name = p.css('strong::text').get()
                 if dep_url[32:39] == "faculty" and dep_name:
 
                     yield DepartmentItem(
@@ -65,14 +60,14 @@ class OnuSpider(scrapy.Spider):
                         faculty=response.meta.get("faculty")
                     )
                     yield scrapy.Request(
-                        url=dep_url + "/staff",
+                        url=dep_url + "/spivrobitnyky",
                         callback=self.parse_department,
                         meta={
                             "department": dep_name
                         }
                     )
                 else:
-                    dep_name = span.find(string=True, recursive=False)
+                    dep_name = p.css('span::text').get()
                     if dep_url[32:39] == "faculty" and dep_name:
 
                         yield DepartmentItem(
@@ -81,7 +76,7 @@ class OnuSpider(scrapy.Spider):
                             faculty=response.meta.get("faculty")
                         )
                         yield scrapy.Request(
-                            url=dep_url + "/staff",
+                            url=dep_url + "/spivrobitnyky",
                             callback=self.parse_department,
                             meta={
                                 "department": dep_name
@@ -89,12 +84,9 @@ class OnuSpider(scrapy.Spider):
                         )
 
     def parse_department(self, response):
-        soup = BeautifulSoup(response.body, "html.parser")
-        staff_list = soup.find(name="table", class_="category")
-
-        for tr in staff_list.find_all("tr"):
-            a = tr.find("a")
-            name = a.find(string=True, recursive=False).strip()
+        staff_list = response.css('table.category').css('tr')
+        for tr in staff_list:
+            name = tr.css('a::text').get().strip()
             if name:
                 yield StaffItem(
                     name=name,

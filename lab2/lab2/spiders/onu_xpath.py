@@ -1,26 +1,23 @@
 import scrapy
-from bs4 import BeautifulSoup
 from Lab2.items import FacultyItem, DepartmentItem, StaffItem
 
 
-class OnuSpider(scrapy.Spider):
-    name = "onu"
+class OnuXpathSpider(scrapy.Spider):
+    name = "onu_xpath"
     allowed_domains = ["onu.edu.ua"]
     start_urls = ["https://onu.edu.ua/uk/structure/faculty"]
 
     def parse(self, response):
-        soup = BeautifulSoup(response.body, "html.parser")
-        fac_list = soup.find(class_="table table-striped table-hover")
-        for tr in fac_list.find_all("tr"):
-            a = tr.find("a")
-            if a:
-                fac_name = a.find(string=True, recursive=False)
-                fac_url = f"https://onu.edu.ua{a.get('href')}"
+        fac_list = response.xpath('//table[contains(@class, "table")]').xpath('//tr')
+
+        for tr in fac_list:
+            fac_name = tr.xpath('.//a/text()').get()
+            fac_url = f"https://onu.edu.ua{tr.xpath('.//a/@href').get()}"
+            if fac_name:
                 yield FacultyItem(
                     name=fac_name,
                     url=fac_url
                 )
-
                 yield scrapy.Request(
                     url=fac_url + "/kafedry-ta-inshi-strukturni-pidrozdily",
                     callback=self.parse_faculty,
@@ -30,33 +27,29 @@ class OnuSpider(scrapy.Spider):
                     }
                 )
 
-    def parse_faculty(self, response):
-        soup = BeautifulSoup(response.body, "html.parser")
-        dep_list = soup.find(name="article", class_="item-page")
 
-        for p in dep_list.find_all("p"):
-            a = p.find("a")
-            strong = p.find("strong")
-            span = p.find("span")
-            dep_name = a.find(string=True, recursive=False)
-            dep_url = f"https://onu.edu.ua{a.get('href')}"
+    def parse_faculty(self, response):
+        dep_list = response.xpath('//article[contains(@class, "item-page")]').xpath('//p')
+        for p in dep_list:
+            dep_name = p.xpath('.//a/text()').get()
+            dep_url = f"https://onu.edu.ua{p.xpath('.//a/@href').get()}"
 
             if dep_url[32:39] == "faculty" and dep_name:
+
                 yield DepartmentItem(
                     name=dep_name,
                     url=dep_url,
                     faculty=response.meta.get("faculty")
                 )
-
                 yield scrapy.Request(
-                    url=dep_url + "/staff",
+                    url=dep_url + "/spivrobitnyky",
                     callback=self.parse_department,
                     meta={
                         "department": dep_name
                     }
                 )
             else:
-                dep_name = strong.find(string=True, recursive=False)
+                dep_name = p.xpath('.//strong/text()').get()
                 if dep_url[32:39] == "faculty" and dep_name:
 
                     yield DepartmentItem(
@@ -65,14 +58,14 @@ class OnuSpider(scrapy.Spider):
                         faculty=response.meta.get("faculty")
                     )
                     yield scrapy.Request(
-                        url=dep_url + "/staff",
+                        url=dep_url + "/spivrobitnyky",
                         callback=self.parse_department,
                         meta={
                             "department": dep_name
                         }
                     )
                 else:
-                    dep_name = span.find(string=True, recursive=False)
+                    dep_name = p.xpath('.//span/text()').get()
                     if dep_url[32:39] == "faculty" and dep_name:
 
                         yield DepartmentItem(
@@ -81,7 +74,7 @@ class OnuSpider(scrapy.Spider):
                             faculty=response.meta.get("faculty")
                         )
                         yield scrapy.Request(
-                            url=dep_url + "/staff",
+                            url=dep_url + "/spivrobitnyky",
                             callback=self.parse_department,
                             meta={
                                 "department": dep_name
@@ -89,12 +82,9 @@ class OnuSpider(scrapy.Spider):
                         )
 
     def parse_department(self, response):
-        soup = BeautifulSoup(response.body, "html.parser")
-        staff_list = soup.find(name="table", class_="category")
-
-        for tr in staff_list.find_all("tr"):
-            a = tr.find("a")
-            name = a.find(string=True, recursive=False).strip()
+        staff_list = response.xpath('//table[contains(@class, "category")]').xpath('//tr')
+        for tr in staff_list:
+            name = tr.xpath('.//a/text()').get().strip()
             if name:
                 yield StaffItem(
                     name=name,
