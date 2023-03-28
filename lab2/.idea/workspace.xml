@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae8f96f7-5cfa-4a8c-b824-27e5053c6f51" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/spiders/onu.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/spiders/onu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/Lab3/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/Lab3/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/Lab3/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/Lab3/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/Lab3/spiders/foxtrot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/Lab3/spiders/foxtrot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/result.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

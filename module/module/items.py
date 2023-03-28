@@ -6,8 +6,8 @@
 import scrapy
 
 
-class FoxtrotItem(scrapy.Item):
+class HotlineItem(scrapy.Item):
     name = scrapy.Field()
     price = scrapy.Field()
     url = scrapy.Field()
-    image_urls = scrapy.Field()
+    title = scrapy.Field()

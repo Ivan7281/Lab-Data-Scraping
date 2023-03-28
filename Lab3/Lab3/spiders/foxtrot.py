@@ -17,8 +17,10 @@ class FoxtrotSpider(scrapy.Spider):
             name = item.find(name="a", class_="card__title").find(string=True, recursive=False).strip()
             url = item.find(name="a", class_="card__title").get("href")
             price = item.find(class_="card-price").find(string=True, recursive=False).strip()
+            image_url = item.find(name="img", class_="align-self-center ").get("scr")
             yield FoxtrotItem(
                 name=name,
                 price=price,
                 url=url,
+                image_urls=[image_url]
             )
