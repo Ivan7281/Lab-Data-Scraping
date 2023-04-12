@@ -7,7 +7,7 @@ class FoxtrotSpider(scrapy.Spider):
     name = "foxtrot"
     allowed_domains = ["foxtrot.com.ua"]
     start_urls = [
-        f"https://www.foxtrot.com.ua/uk/shop/mobilnye_telefony_smartfon.html?page={page}" for page in range(1, 6)]
+        f"https://www.foxtrot.com.ua/uk/shop/mobilnye_telefony_smartfon.html?page={page}" for page in range(1, 2)]
 
     def parse(self, response):
         soup = BeautifulSoup(response.body,  "html.parser")
@@ -17,10 +17,10 @@ class FoxtrotSpider(scrapy.Spider):
             name = item.find(name="a", class_="card__title").find(string=True, recursive=False).strip()
             url = item.find(name="a", class_="card__title").get("href")
             price = item.find(class_="card-price").find(string=True, recursive=False).strip()
-            image_url = item.find(name="img", class_="align-self-center ").get("scr")
+            image_url = item.find(name="img", class_="align-self-center").get("src")
             yield FoxtrotItem(
                 name=name,
                 price=price,
-                url=url,
+                url=f"https://www.foxtrot.com.ua{url}",
                 image_urls=[image_url]
             )
