@@ -1,6 +1,6 @@
 import scrapy
 from bs4 import BeautifulSoup
-from Lab6.Lab6.items import FacultyItem, DepartmentItem, StaffItem
+from Lab6.items import FacultyItem, DepartmentItem, StaffItem
 
 class OnuSpider(scrapy.Spider):
     name = "onu"

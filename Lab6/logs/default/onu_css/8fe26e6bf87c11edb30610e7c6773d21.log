@@ -1,0 +1,987 @@
+2023-05-22 11:42:21 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: Lab6)
+2023-05-22 11:42:21 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 23.0.0 (OpenSSL 3.0.8 7 Feb 2023), cryptography 39.0.1, Platform Windows-10-10.0.19045-SP0
+2023-05-22 11:42:21 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Lab6',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs\\default\\onu_css\\8fe26e6bf87c11edb30610e7c6773d21.log',
+ 'NEWSPIDER_MODULE': 'Lab6.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['Lab6.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-05-22 11:42:21 [asyncio] DEBUG: Using selector: SelectSelector
+2023-05-22 11:42:21 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-05-22 11:42:21 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-05-22 11:42:21 [scrapy.extensions.telnet] INFO: Telnet Password: 2d193f20297ef520
+2023-05-22 11:42:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-05-22 11:42:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-05-22 11:42:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-05-22 11:42:22 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-05-22 11:42:22 [scrapy.core.engine] INFO: Spider opened
+2023-05-22 11:42:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-05-22 11:42:22 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-05-22 11:42:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty> (referer: None)
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Біологічний факультет',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/biology'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Геолого-географічний факультет',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/ggf'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Економіко-правовий факультет',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/epf'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет історії та філософії',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/hist'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет журналістики, реклами та видавничої справи',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/journal'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет математики, фізики та інформаційних технологій',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmfit'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет міжнародних відносин, політології та соціології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmvps'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет психології та соціальної роботи',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/iipo'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет романо-германської філології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Філологічний факультет',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/philolog'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет хімїї та фармації',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/chem'}
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет хімїї та фармації',
+ 'name': 'Кафедра аналітичної та токсикологічної хімії',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/analytical'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет хімїї та фармації',
+ 'name': 'Кафедра неорганічної хімії та хімічної освіти',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-neorhanichnoi-khimii-ta-khimichnoi-osvity'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет хімїї та фармації',
+ 'name': 'Кафедра органічної та фармацевтичної хімії',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/organic'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет хімїї та фармації',
+ 'name': 'Кафедра фармакології та технології ліків',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/pharmac'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет хімїї та фармації',
+ 'name': 'Кафедра фізичної та колоїдної хімії',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/physicalcol'}
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/ggf/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Філологічний факультет',
+ 'name': 'Кафедра загального та слов’янського мовознавства',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/genlang'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Філологічний факультет',
+ 'name': 'Кафедра прикладної лінгвістики',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/ling'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Філологічний факультет',
+ 'name': 'Кафедра української літератури і компарактивістики',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/ualit'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Філологічний факультет',
+ 'name': 'Кафедра української мови та мовної підготовки іноземців',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/ualang'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет журналістики, реклами та видавничої справи',
+ 'name': 'Кафедра журналістики, реклами та медіакомунікацій',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-zhurnalistyky-reklamy-ta-mediakomunikatsii'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет журналістики, реклами та видавничої справи',
+ 'name': 'Кафедра нових медіа та медіадизайну',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-novykh-media-ta-mediadyzainu'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет історії та філософії',
+ 'name': 'Кафедра археології та етнології України',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/arhch'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет історії та філософії',
+ 'name': 'Кафедра історії України та спеціальних історичних дисциплін',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/ua-history'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет історії та філософії',
+ 'name': 'Кафедра культурології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/culture'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет міжнародних відносин, політології та соціології',
+ 'name': 'Кафедра міжнародних відносин',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет міжнародних відносин, політології та соціології',
+ 'name': 'Кафедра політології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/polit'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет міжнародних відносин, політології та соціології',
+ 'name': 'Кафедра світового господарства і міжнародних економічних відносин',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/imem-world-eco'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет міжнародних відносин, політології та соціології',
+ 'name': 'Кафедра соціології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/social'}
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/physicalcol/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-neorhanichnoi-khimii-ta-khimichnoi-osvity/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/pharmac/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет історії та філософії',
+ 'name': 'Кафедра філософії',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/gen'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет історії та філософії',
+ 'name': 'Кафедра всесвітньої історії',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/new-hist'}
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/ggf/kafedry-ta-inshi-strukturni-pidrozdily>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Економіко-правовий факультет',
+ 'name': 'Кафедра адміністративного та господарського права',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/adm-right'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Економіко-правовий факультет',
+ 'name': 'Кафедра економіки та підприємництва',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/theor-ecomon'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Економіко-правовий факультет',
+ 'name': 'Кафедра загально-правових дисциплін та міжнародного права',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/interlaw'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Економіко-правовий факультет',
+ 'name': 'Кафедра конституційного права та правосуддя',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/const'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Економіко-правовий факультет',
+ 'name': 'Кафедра кримінального права, кримінального процесу та криміналістики',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/crime'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Економіко-правовий факультет',
+ 'name': 'Кафедра маркетингу та бізнес-адміністрування',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/marketing'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Економіко-правовий факультет',
+ 'name': 'Кафедра менеджменту та інновацій',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/econ-ctrl'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Економіко-правовий факультет',
+ 'name': 'Кафедра обліку і фінансів',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-obliku-i-finansiv'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Економіко-правовий факультет',
+ 'name': 'Кафедра цивільно-правових дисциплін',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/civil'}
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/physicalcol/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-neorhanichnoi-khimii-ta-khimichnoi-osvity/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Біологічний факультет',
+ 'name': 'Кафедра ботаніки, фізіології рослин та садово-паркового господарства',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/botanic'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Біологічний факультет',
+ 'name': 'Кафедра зоології, гідробіології та загальної екології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-zoolohii-hidrobiolohii-ta-zahalnoi-ekolohii'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Біологічний факультет',
+ 'name': 'Кафедра мікробіології, вірусології та біотехнології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/microbio'}
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/analytical/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/ualang/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/ualit/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/pharmac/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Біологічний факультет',
+ 'name': 'Кафедра молекулярної біології, біохімії та генетики',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/genetic'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Біологічний факультет',
+ 'name': "Кафедра фізіології, здоров'я і безпеки людини та природничої освіти",
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/kaf-fiziologii-zdorovya-bezpeky-ludyny'}
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/ling/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/imem-world-eco/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/genlang/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/polit/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/analytical/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/ualang/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/ualit/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/ling/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/ua-history/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/arhch/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/imem-world-eco/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/genlang/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/polit/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-novykh-media-ta-mediadyzainu/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-zhurnalistyky-reklamy-ta-mediakomunikatsii/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/genetic/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/kaf-fiziologii-zdorovya-bezpeky-ludyny/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/ua-history/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/arhch/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-novykh-media-ta-mediadyzainu/spivrobitnyky>
+{'department': 'Кафедра нових медіа та медіадизайну',
+ 'name': 'Азєєв Сергій Володимирович'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-novykh-media-ta-mediadyzainu/spivrobitnyky>
+{'department': 'Кафедра нових медіа та медіадизайну',
+ 'name': 'Кутуза Наталя Валеріївна'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-novykh-media-ta-mediadyzainu/spivrobitnyky>
+{'department': 'Кафедра нових медіа та медіадизайну',
+ 'name': 'Орлова Олена Миколаївна'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-novykh-media-ta-mediadyzainu/spivrobitnyky>
+{'department': 'Кафедра нових медіа та медіадизайну',
+ 'name': 'Полюга Василь Андрійович'}
+2023-05-22 11:42:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-novykh-media-ta-mediadyzainu/spivrobitnyky>
+{'department': 'Кафедра нових медіа та медіадизайну',
+ 'name': 'Тхоржевська Тетяна Вікторівна'}
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/microbio/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-zoolohii-hidrobiolohii-ta-zahalnoi-ekolohii/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/botanic/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/genetic/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/kaf-fiziologii-zdorovya-bezpeky-ludyny/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-zhurnalistyky-reklamy-ta-mediakomunikatsii/spivrobitnyky>
+{'department': 'Кафедра журналістики, реклами та медіакомунікацій',
+ 'name': 'Брошкова Світлана Леонідівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-zhurnalistyky-reklamy-ta-mediakomunikatsii/spivrobitnyky>
+{'department': 'Кафедра журналістики, реклами та медіакомунікацій',
+ 'name': 'Червінчук Аліна Олегівна'}
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/civil/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/econ-ctrl/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/marketing/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-zoolohii-hidrobiolohii-ta-zahalnoi-ekolohii/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/microbio/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/botanic/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/civil/spivrobitnyky>
+{'department': 'Кафедра цивільно-правових дисциплін',
+ 'name': 'Байло Олена Володимирівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/civil/spivrobitnyky>
+{'department': 'Кафедра цивільно-правових дисциплін',
+ 'name': 'Барський Вадим Рудольфович'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/civil/spivrobitnyky>
+{'department': 'Кафедра цивільно-правових дисциплін',
+ 'name': 'Булат Наталія Миколаївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/civil/spivrobitnyky>
+{'department': 'Кафедра цивільно-правових дисциплін',
+ 'name': 'Валах Вікторія Володимирівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/civil/spivrobitnyky>
+{'department': 'Кафедра цивільно-правових дисциплін',
+ 'name': 'Голоденко Ірина Олександрівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/civil/spivrobitnyky>
+{'department': 'Кафедра цивільно-правових дисциплін',
+ 'name': 'Завертнева-Ярошенко Валерія Адольфівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/civil/spivrobitnyky>
+{'department': 'Кафедра цивільно-правових дисциплін',
+ 'name': 'Канзафарова Ілона Станіславівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/civil/spivrobitnyky>
+{'department': 'Кафедра цивільно-правових дисциплін',
+ 'name': 'Клейменова Світлана Миколаївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/civil/spivrobitnyky>
+{'department': 'Кафедра цивільно-правових дисциплін',
+ 'name': 'Комаренко Анатолій Миколайович'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/civil/spivrobitnyky>
+{'department': 'Кафедра цивільно-правових дисциплін',
+ 'name': 'Корнеєва Євгенія Михайлівна'}
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-obliku-i-finansiv/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/marketing/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/econ-ctrl/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/crime/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/const/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/interlaw/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/theor-ecomon/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-obliku-i-finansiv/spivrobitnyky>
+{'department': 'Кафедра обліку і фінансів',
+ 'name': 'Багдікян Сусанна Вараздатівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-obliku-i-finansiv/spivrobitnyky>
+{'department': 'Кафедра обліку і фінансів', 'name': 'Борисова Лариса Євгенівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-obliku-i-finansiv/spivrobitnyky>
+{'department': 'Кафедра обліку і фінансів',
+ 'name': 'Бутенко Вікторія Василівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-obliku-i-finansiv/spivrobitnyky>
+{'department': 'Кафедра обліку і фінансів',
+ 'name': 'Дем’янчук Марина Афанасіївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-obliku-i-finansiv/spivrobitnyky>
+{'department': 'Кафедра обліку і фінансів',
+ 'name': 'Дроздова Олена Геннадіївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-obliku-i-finansiv/spivrobitnyky>
+{'department': 'Кафедра обліку і фінансів',
+ 'name': 'Масіна Людмила Олександрівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-obliku-i-finansiv/spivrobitnyky>
+{'department': 'Кафедра обліку і фінансів', 'name': 'Нікола Світлана Олегівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-obliku-i-finansiv/spivrobitnyky>
+{'department': 'Кафедра обліку і фінансів',
+ 'name': 'Осадчук Світлана Вікторівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-obliku-i-finansiv/spivrobitnyky>
+{'department': 'Кафедра обліку і фінансів',
+ 'name': 'Побережець Ольга Валеріївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-obliku-i-finansiv/spivrobitnyky>
+{'department': 'Кафедра обліку і фінансів',
+ 'name': 'Савастєєва Оксана Миколаївна'}
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/new-hist/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/crime/spivrobitnyky>
+{'department': 'Кафедра кримінального права, кримінального процесу та '
+               'криміналістики',
+ 'name': 'Возний Денис Віталійович'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/crime/spivrobitnyky>
+{'department': 'Кафедра кримінального права, кримінального процесу та '
+               'криміналістики',
+ 'name': 'Дришлюк Ігор Анатолійович'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/crime/spivrobitnyky>
+{'department': 'Кафедра кримінального права, кримінального процесу та '
+               'криміналістики',
+ 'name': 'Козерацька Олена Сергіївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/crime/spivrobitnyky>
+{'department': 'Кафедра кримінального права, кримінального процесу та '
+               'криміналістики',
+ 'name': 'Миколенко Олена Миколаївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/crime/spivrobitnyky>
+{'department': 'Кафедра кримінального права, кримінального процесу та '
+               'криміналістики',
+ 'name': 'Нарожна Олена Володимирівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/crime/spivrobitnyky>
+{'department': 'Кафедра кримінального права, кримінального процесу та '
+               'криміналістики',
+ 'name': 'Орловський Богдан Михайлович'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/crime/spivrobitnyky>
+{'department': 'Кафедра кримінального права, кримінального процесу та '
+               'криміналістики',
+ 'name': 'Павлова (Гончар) Тетяна Олександрівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/crime/spivrobitnyky>
+{'department': 'Кафедра кримінального права, кримінального процесу та '
+               'криміналістики',
+ 'name': 'Поліванова (Доброход) Ірина Сергіївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/crime/spivrobitnyky>
+{'department': 'Кафедра кримінального права, кримінального процесу та '
+               'криміналістики',
+ 'name': 'Родіонова Тетяна Василівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/crime/spivrobitnyky>
+{'department': 'Кафедра кримінального права, кримінального процесу та '
+               'криміналістики',
+ 'name': 'Чуваков Олег Анатолійович'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/const/spivrobitnyky>
+{'department': 'Кафедра конституційного права та правосуддя',
+ 'name': 'Борщенко Владлена Валеріївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/const/spivrobitnyky>
+{'department': 'Кафедра конституційного права та правосуддя',
+ 'name': 'Корчевна Любов Олександрівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/const/spivrobitnyky>
+{'department': 'Кафедра конституційного права та правосуддя',
+ 'name': 'Кузнєцова Зоя Вікторівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/const/spivrobitnyky>
+{'department': 'Кафедра конституційного права та правосуддя',
+ 'name': 'Левенець Анжела Вікторівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/const/spivrobitnyky>
+{'department': 'Кафедра конституційного права та правосуддя',
+ 'name': 'Пілюк Суліко Валеріївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/const/spivrobitnyky>
+{'department': 'Кафедра конституційного права та правосуддя',
+ 'name': 'Прієшкіна Ольга Василівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/const/spivrobitnyky>
+{'department': 'Кафедра конституційного права та правосуддя',
+ 'name': 'Саракуца Марія Олександрівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/const/spivrobitnyky>
+{'department': 'Кафедра конституційного права та правосуддя',
+ 'name': 'Степанова Тетяна Валеріївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/interlaw/spivrobitnyky>
+{'department': 'Кафедра загально-правових дисциплін та міжнародного права',
+ 'name': 'Борщевський Ігор Вячеславович'}
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/interlaw/spivrobitnyky>
+{'department': 'Кафедра загально-правових дисциплін та міжнародного права',
+ 'name': 'Гринь Оксана Дмитрівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/interlaw/spivrobitnyky>
+{'department': 'Кафедра загально-правових дисциплін та міжнародного права',
+ 'name': 'Донченко Олена Іванівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/interlaw/spivrobitnyky>
+{'department': 'Кафедра загально-правових дисциплін та міжнародного права',
+ 'name': 'Нігреєва Олена Олександрівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/interlaw/spivrobitnyky>
+{'department': 'Кафедра загально-правових дисциплін та міжнародного права',
+ 'name': 'Стрельцова Євдокія Джонівна'}
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/theor-ecomon/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/culture/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/new-hist/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет психології та соціальної роботи',
+ 'name': 'Кафедра диференціальної і спеціальної психології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-spec-psyh'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет психології та соціальної роботи',
+ 'name': 'Кафедра загальної психології та психології розвитку особистості',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-gen-psy-pers'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет психології та соціальної роботи',
+ 'name': 'Кафедра практичної та клінічної психології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/praktychna-ta-klinichna-psihilogiya'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет психології та соціальної роботи',
+ 'name': 'Кафедра соціальної психології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-soc-app-psych'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет психології та соціальної роботи',
+ 'name': 'Кафедра соціальної роботи',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-sotsialnoi-roboty'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет романо-германської філології',
+ 'name': 'Кафедра граматики англійської мови',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет романо-германської філології',
+ 'name': 'Кафедра зарубіжної літератури',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignlit'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет романо-германської філології',
+ 'name': 'Кафедра іноземних мов гуманітарних факультетів',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreign'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет романо-германської філології',
+ 'name': 'Кафедра іноземних мов природничих факультетів',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignnat'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет романо-германської філології',
+ 'name': 'Кафедра іспанської філології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/spanish'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет романо-германської філології',
+ 'name': 'Кафедра лексикології і стилістики англійської мови',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/style-eng'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет романо-германської філології',
+ 'name': 'Кафедра німецької філології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/germanfil'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет романо-германської філології',
+ 'name': 'Кафедра педагогіки',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/pedag'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет романо-германської філології',
+ 'name': 'Кафедра теоретичної і прикладної фонетики англійської мови',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/fonet'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет романо-германської філології',
+ 'name': 'Кафедра теорії та практики перекладу',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/translate'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет математики, фізики та інформаційних технологій',
+ 'name': 'Кафедра диференціальних рівнянь, геометрії та топології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет математики, фізики та інформаційних технологій',
+ 'name': "Кафедра комп'ютерних систем та технологій",
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/dist'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет математики, фізики та інформаційних технологій',
+ 'name': "Кафедра комп'ютерної алгебри та дискретної математики",
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/compalgeb'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет математики, фізики та інформаційних технологій',
+ 'name': 'Кафедра математичного аналізу',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-analysis'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет математики, фізики та інформаційних технологій',
+ 'name': "Кафедра математичного забезпечення комп'ютерних систем",
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-comp-system'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет математики, фізики та інформаційних технологій',
+ 'name': 'Кафедра методів математичної фізики',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/mmf'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет математики, фізики та інформаційних технологій',
+ 'name': 'Кафедра механіки, автоматизації та інформаційних технологій',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/theormech'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет математики, фізики та інформаційних технологій',
+ 'name': 'Кафедра оптимального керування і економічної кібернетики',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/optcontrol'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет психології та соціальної роботи',
+ 'name': 'Центр перепідготовки та підвищення кваліфікації',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/tsentr-perepidhotovky-ta-pidvyshchennia-kvalifikatsii'}
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/organic/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет романо-германської філології',
+ 'name': 'Кафедра французької філології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/french'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет психології та соціальної роботи',
+ 'name': 'Центр гендерних досліджень',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/tsentr-hendernykh-doslidzhen'}
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/culture/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/organic/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/theormech/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/optcontrol/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/mmf/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-analysis/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/dist/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-sotsialnoi-roboty/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/mmf/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/theormech/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/optcontrol/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/compalgeb/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/pedag/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-analysis/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/dist/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-sotsialnoi-roboty/spivrobitnyky>
+{'department': 'Кафедра соціальної роботи',
+ 'name': 'Варнава Уляна Володимирівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-sotsialnoi-roboty/spivrobitnyky>
+{'department': 'Кафедра соціальної роботи', 'name': 'Дубініна Яна Павлівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-sotsialnoi-roboty/spivrobitnyky>
+{'department': 'Кафедра соціальної роботи', 'name': 'Дунаєва Лариса Миколаївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-sotsialnoi-roboty/spivrobitnyky>
+{'department': 'Кафедра соціальної роботи',
+ 'name': 'Кременчуцька Маргарита Костянтинівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-sotsialnoi-roboty/spivrobitnyky>
+{'department': 'Кафедра соціальної роботи',
+ 'name': 'Кулава Катерина Олександрівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-sotsialnoi-roboty/spivrobitnyky>
+{'department': 'Кафедра соціальної роботи',
+ 'name': 'Мосійчук Тамара Євгеніївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-sotsialnoi-roboty/spivrobitnyky>
+{'department': 'Кафедра соціальної роботи',
+ 'name': 'Смокова Людмила Степанівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-sotsialnoi-roboty/spivrobitnyky>
+{'department': 'Кафедра соціальної роботи', 'name': 'Хлівнюк Тетяна Петрівна'}
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/fonet/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/compalgeb/spivrobitnyky>
+{'department': "Кафедра комп'ютерної алгебри та дискретної математики",
+ 'name': 'Бєлозьоров Геннадій Сергійович'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/compalgeb/spivrobitnyky>
+{'department': "Кафедра комп'ютерної алгебри та дискретної математики",
+ 'name': 'Варбанець Павло Дмитрович'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/compalgeb/spivrobitnyky>
+{'department': "Кафедра комп'ютерної алгебри та дискретної математики",
+ 'name': 'Савастру Ольга Володимирівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/compalgeb/spivrobitnyky>
+{'department': "Кафедра комп'ютерної алгебри та дискретної математики",
+ 'name': 'Сімонова Ірина Гаянівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/compalgeb/spivrobitnyky>
+{'department': "Кафедра комп'ютерної алгебри та дискретної математики",
+ 'name': 'Якімова Наталія Анатоліївна'}
+2023-05-22 11:42:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/pedag/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/germanfil/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/tsentr-hendernykh-doslidzhen/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/tsentr-perepidhotovky-ta-pidvyshchennia-kvalifikatsii/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation/spivrobitnyky>
+{'department': 'Кафедра диференціальних рівнянь, геометрії та топології',
+ 'name': 'Білозерова Марія Олександрівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation/spivrobitnyky>
+{'department': 'Кафедра диференціальних рівнянь, геометрії та топології',
+ 'name': 'Євтухов В’ячеслав Михайлович'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation/spivrobitnyky>
+{'department': 'Кафедра диференціальних рівнянь, геометрії та топології',
+ 'name': 'Курбатова Ірина Миколаївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation/spivrobitnyky>
+{'department': 'Кафедра диференціальних рівнянь, геометрії та топології',
+ 'name': 'Максимов Олександр Олександрович'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation/spivrobitnyky>
+{'department': 'Кафедра диференціальних рівнянь, геометрії та топології',
+ 'name': 'Покась Сергій Михайлович'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation/spivrobitnyky>
+{'department': 'Кафедра диференціальних рівнянь, геометрії та топології',
+ 'name': 'Потапенко Ігор Володимирович'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation/spivrobitnyky>
+{'department': 'Кафедра диференціальних рівнянь, геометрії та топології',
+ 'name': 'Самкова Галина Евгенівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation/spivrobitnyky>
+{'department': 'Кафедра диференціальних рівнянь, геометрії та топології',
+ 'name': 'Флора Тетяна Володимирівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation/spivrobitnyky>
+{'department': 'Кафедра диференціальних рівнянь, геометрії та топології',
+ 'name': 'Шарай Наталія Вікторівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation/spivrobitnyky>
+{'department': 'Кафедра диференціальних рівнянь, геометрії та топології',
+ 'name': 'Шарай Тетяна Павлівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/fonet/spivrobitnyky>
+{'department': 'Кафедра теоретичної і прикладної фонетики англійської мови',
+ 'name': 'Бігунова Наталя Олександрівна'}
+2023-05-22 11:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/french/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/fonet/spivrobitnyky>
+{'department': 'Кафедра теоретичної і прикладної фонетики англійської мови',
+ 'name': 'Бондаренко Катерина Андріївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/fonet/spivrobitnyky>
+{'department': 'Кафедра теоретичної і прикладної фонетики англійської мови',
+ 'name': 'Віт Юлія Валер’ївна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/fonet/spivrobitnyky>
+{'department': 'Кафедра теоретичної і прикладної фонетики англійської мови',
+ 'name': 'Григорян Нектар Размиківна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/fonet/spivrobitnyky>
+{'department': 'Кафедра теоретичної і прикладної фонетики англійської мови',
+ 'name': 'Грігорян Анна Ігорівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/fonet/spivrobitnyky>
+{'department': 'Кафедра теоретичної і прикладної фонетики англійської мови',
+ 'name': 'Дьоміна Наталя Юхимівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/fonet/spivrobitnyky>
+{'department': 'Кафедра теоретичної і прикладної фонетики англійської мови',
+ 'name': 'Євдокимова Інна Олександрівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/fonet/spivrobitnyky>
+{'department': 'Кафедра теоретичної і прикладної фонетики англійської мови',
+ 'name': 'Кравченко Ніна Олександрівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/fonet/spivrobitnyky>
+{'department': 'Кафедра теоретичної і прикладної фонетики англійської мови',
+ 'name': 'Ланчуковська Надія Володимирівна'}
+2023-05-22 11:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/fonet/spivrobitnyky>
+{'department': 'Кафедра теоретичної і прикладної фонетики англійської мови',
+ 'name': 'Матієнко-Сільницька Анна Валеріївна'}
+2023-05-22 11:42:25 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/tsentr-hendernykh-doslidzhen/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:25 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/tsentr-perepidhotovky-ta-pidvyshchennia-kvalifikatsii/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/germanfil/spivrobitnyky>
+{'department': 'Кафедра німецької філології', 'name': 'Азарова Інесса Ігорівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/germanfil/spivrobitnyky>
+{'department': 'Кафедра німецької філології',
+ 'name': 'Богуславський Сергій Сергійович'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/germanfil/spivrobitnyky>
+{'department': 'Кафедра німецької філології',
+ 'name': 'Букрєєва Лілія Леонідівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/germanfil/spivrobitnyky>
+{'department': 'Кафедра німецької філології',
+ 'name': 'Вербицька Тетяна Діомідівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/germanfil/spivrobitnyky>
+{'department': 'Кафедра німецької філології',
+ 'name': 'Голубенко Лідія Миколаївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/germanfil/spivrobitnyky>
+{'department': 'Кафедра німецької філології',
+ 'name': 'Голубенко Наталя Юріївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/germanfil/spivrobitnyky>
+{'department': 'Кафедра німецької філології',
+ 'name': 'Діденко Наталя Миколаївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/germanfil/spivrobitnyky>
+{'department': 'Кафедра німецької філології', 'name': 'Зощенко Леся Михайлівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/germanfil/spivrobitnyky>
+{'department': 'Кафедра німецької філології',
+ 'name': 'Іваницька Юлія Валеріївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/germanfil/spivrobitnyky>
+{'department': 'Кафедра німецької філології', 'name': 'Кулина Ірина Георгіївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/french/spivrobitnyky>
+{'department': 'Кафедра французької філології',
+ 'name': 'Весна Тетяна Василівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/french/spivrobitnyky>
+{'department': 'Кафедра французької філології',
+ 'name': 'Драгомирецький Олексій Олександрович'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/french/spivrobitnyky>
+{'department': 'Кафедра французької філології',
+ 'name': 'Князян Маріанна Олексіївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/french/spivrobitnyky>
+{'department': 'Кафедра французької філології',
+ 'name': 'Коккіна Ліліта Рейнісівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/french/spivrobitnyky>
+{'department': 'Кафедра французької філології',
+ 'name': 'Марінашвілі Мальвіна Джангізівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/french/spivrobitnyky>
+{'department': 'Кафедра французької філології',
+ 'name': 'Млинчик Андрій Венедиктович'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/french/spivrobitnyky>
+{'department': 'Кафедра французької філології',
+ 'name': 'Панченко Інна Володимирівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/french/spivrobitnyky>
+{'department': 'Кафедра французької філології',
+ 'name': 'Романюк Діана Хачатурівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/french/spivrobitnyky>
+{'department': 'Кафедра французької філології',
+ 'name': 'Телецька Тетяна Володимирівна'}
+2023-05-22 11:42:25 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignnat/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/translate/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/style-eng/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/spanish/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:25 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignnat/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/translate/spivrobitnyky>
+{'department': 'Кафедра теорії та практики перекладу',
+ 'name': 'Болдирева Анжела Євгеніївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/style-eng/spivrobitnyky>
+{'department': 'Кафедра лексикології і стилістики англійської мови',
+ 'name': 'Долусова Наталя Валеріївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/style-eng/spivrobitnyky>
+{'department': 'Кафедра лексикології і стилістики англійської мови',
+ 'name': 'Ігіна Олена Володимирівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/style-eng/spivrobitnyky>
+{'department': 'Кафедра лексикології і стилістики англійської мови',
+ 'name': 'Калінюк Олена Олексіївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/style-eng/spivrobitnyky>
+{'department': 'Кафедра лексикології і стилістики англійської мови',
+ 'name': 'Кашуба Марина Валентинівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/style-eng/spivrobitnyky>
+{'department': 'Кафедра лексикології і стилістики англійської мови',
+ 'name': 'Колегаєва Ірина Михайлівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/style-eng/spivrobitnyky>
+{'department': 'Кафедра лексикології і стилістики англійської мови',
+ 'name': 'Корольова Наталія Лівіевна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/style-eng/spivrobitnyky>
+{'department': 'Кафедра лексикології і стилістики англійської мови',
+ 'name': 'Красницька Катерина Вікторівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/style-eng/spivrobitnyky>
+{'department': 'Кафедра лексикології і стилістики англійської мови',
+ 'name': 'Насталовська Ірина Вікторівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/style-eng/spivrobitnyky>
+{'department': 'Кафедра лексикології і стилістики англійської мови',
+ 'name': 'Нетреба Катерина Сергіївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/style-eng/spivrobitnyky>
+{'department': 'Кафедра лексикології і стилістики англійської мови',
+ 'name': 'Новаковська Ольга Миколаївна'}
+2023-05-22 11:42:25 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:25 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-soc-app-psych/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/translate/spivrobitnyky>
+{'department': 'Кафедра теорії та практики перекладу',
+ 'name': 'Горбатюк Наталя Олегівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/translate/spivrobitnyky>
+{'department': 'Кафедра теорії та практики перекладу',
+ 'name': 'Гринько Ольга Сергіївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/translate/spivrobitnyky>
+{'department': 'Кафедра теорії та практики перекладу',
+ 'name': 'Добровольська Діана Михайлівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/translate/spivrobitnyky>
+{'department': 'Кафедра теорії та практики перекладу',
+ 'name': 'Єрьоменко Світлана Василівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/translate/spivrobitnyky>
+{'department': 'Кафедра теорії та практики перекладу',
+ 'name': 'Кириллова Марина Дмитрівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/translate/spivrobitnyky>
+{'department': 'Кафедра теорії та практики перекладу',
+ 'name': 'Матузкова Олена Прокопівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/translate/spivrobitnyky>
+{'department': 'Кафедра теорії та практики перекладу',
+ 'name': 'Негру Анастасія Петрівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/translate/spivrobitnyky>
+{'department': 'Кафедра теорії та практики перекладу',
+ 'name': 'Раєвська Ірина Валеріївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/translate/spivrobitnyky>
+{'department': 'Кафедра теорії та практики перекладу',
+ 'name': 'Фарапонова Вікторія Сергіївна'}
+2023-05-22 11:42:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreign/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignlit/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/spanish/spivrobitnyky>
+{'department': 'Кафедра іспанської філології',
+ 'name': 'Вещицька Вікторія Олександрівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/spanish/spivrobitnyky>
+{'department': 'Кафедра іспанської філології',
+ 'name': 'Григорович Олена Володимирівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/spanish/spivrobitnyky>
+{'department': 'Кафедра іспанської філології',
+ 'name': 'Гринько Людмила Віталіївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/spanish/spivrobitnyky>
+{'department': 'Кафедра іспанської філології',
+ 'name': 'Колбаєнкова Тетяна Борисівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/spanish/spivrobitnyky>
+{'department': 'Кафедра іспанської філології',
+ 'name': 'Красницька Катерина Миколаївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/spanish/spivrobitnyky>
+{'department': 'Кафедра іспанської філології',
+ 'name': 'Ніцевич Алехандро Архентино Олексійович'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/spanish/spivrobitnyky>
+{'department': 'Кафедра іспанської філології',
+ 'name': 'Шуппе Людмила Володимирівна'}
+2023-05-22 11:42:25 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/social/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:25 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/praktychna-ta-klinichna-psihilogiya/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:25 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/gen/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:25 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:25 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-soc-app-psych/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreign/spivrobitnyky>
+{'department': 'Кафедра іноземних мов гуманітарних факультетів',
+ 'name': 'Александрова Ольга Володимирівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreign/spivrobitnyky>
+{'department': 'Кафедра іноземних мов гуманітарних факультетів',
+ 'name': 'Віт Надія Петрівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreign/spivrobitnyky>
+{'department': 'Кафедра іноземних мов гуманітарних факультетів',
+ 'name': 'Дімова Лариса Степанівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreign/spivrobitnyky>
+{'department': 'Кафедра іноземних мов гуманітарних факультетів',
+ 'name': 'Караваєва Тетяна Леонідівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreign/spivrobitnyky>
+{'department': 'Кафедра іноземних мов гуманітарних факультетів',
+ 'name': 'Марчук Ірина Петрівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreign/spivrobitnyky>
+{'department': 'Кафедра іноземних мов гуманітарних факультетів',
+ 'name': 'Матович Ольга Олегівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreign/spivrobitnyky>
+{'department': 'Кафедра іноземних мов гуманітарних факультетів',
+ 'name': 'Мікава Нана Михайлівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreign/spivrobitnyky>
+{'department': 'Кафедра іноземних мов гуманітарних факультетів',
+ 'name': 'Набока Олена Миколаївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreign/spivrobitnyky>
+{'department': 'Кафедра іноземних мов гуманітарних факультетів',
+ 'name': 'Онищук Ірина Юріївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreign/spivrobitnyky>
+{'department': 'Кафедра іноземних мов гуманітарних факультетів',
+ 'name': 'Орлов Віталій Володимирович'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignlit/spivrobitnyky>
+{'department': 'Кафедра зарубіжної літератури',
+ 'name': 'Холодов Олексій Борисович'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignlit/spivrobitnyky>
+{'department': 'Кафедра зарубіжної літератури',
+ 'name': 'Абабіна Наталія Василівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignlit/spivrobitnyky>
+{'department': 'Кафедра зарубіжної літератури',
+ 'name': 'Бежан Олена Анатоліївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignlit/spivrobitnyky>
+{'department': 'Кафедра зарубіжної літератури',
+ 'name': 'Дмитрієва Валерія Володимирівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignlit/spivrobitnyky>
+{'department': 'Кафедра зарубіжної літератури',
+ 'name': 'Долга Наталія Миколаївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignlit/spivrobitnyky>
+{'department': 'Кафедра зарубіжної літератури',
+ 'name': 'Ланова Вікторія Володимирівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignlit/spivrobitnyky>
+{'department': 'Кафедра зарубіжної літератури',
+ 'name': 'Помогайбо Юлія Олександрівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignlit/spivrobitnyky>
+{'department': 'Кафедра зарубіжної літератури',
+ 'name': 'Рожкова Анастасія Віталіївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignlit/spivrobitnyky>
+{'department': 'Кафедра зарубіжної літератури',
+ 'name': 'Романець Валентина Михайлівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/foreignlit/spivrobitnyky>
+{'department': 'Кафедра зарубіжної літератури',
+ 'name': 'Садовська Юлія Володимирівна'}
+2023-05-22 11:42:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/adm-right/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:25 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/social/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:25 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/gen/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:25 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/praktychna-ta-klinichna-psihilogiya/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/adm-right/spivrobitnyky>
+{'department': 'Кафедра адміністративного та господарського права',
+ 'name': 'Баламуш Мар’яна Анатоліївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/adm-right/spivrobitnyky>
+{'department': 'Кафедра адміністративного та господарського права',
+ 'name': 'Білик Павло Петрович'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/adm-right/spivrobitnyky>
+{'department': 'Кафедра адміністративного та господарського права',
+ 'name': 'Гаран (Стукаленко) Ольга Володимирівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/adm-right/spivrobitnyky>
+{'department': 'Кафедра адміністративного та господарського права',
+ 'name': 'Добровольська Ніна Василівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/adm-right/spivrobitnyky>
+{'department': 'Кафедра адміністративного та господарського права',
+ 'name': 'Ільєва Наталія Василівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/adm-right/spivrobitnyky>
+{'department': 'Кафедра адміністративного та господарського права',
+ 'name': 'Лазарева Мар’яна Іванівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/adm-right/spivrobitnyky>
+{'department': 'Кафедра адміністративного та господарського права',
+ 'name': 'Миколенко Олександр Іванович'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/adm-right/spivrobitnyky>
+{'department': 'Кафедра адміністративного та господарського права',
+ 'name': 'Смітюх Андрій Володимирович'}
+2023-05-22 11:42:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-comp-system/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-comp-system/spivrobitnyky>
+{'department': "Кафедра математичного забезпечення комп'ютерних систем",
+ 'name': 'Трубіна Наталія Федорівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-comp-system/spivrobitnyky>
+{'department': "Кафедра математичного забезпечення комп'ютерних систем",
+ 'name': 'Антоненко Олександр Сергійович'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-comp-system/spivrobitnyky>
+{'department': "Кафедра математичного забезпечення комп'ютерних систем",
+ 'name': 'Волощук Людмила Арнольдівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-comp-system/spivrobitnyky>
+{'department': "Кафедра математичного забезпечення комп'ютерних систем",
+ 'name': 'Крапівний Юрій Миколайович'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-comp-system/spivrobitnyky>
+{'department': "Кафедра математичного забезпечення комп'ютерних систем",
+ 'name': 'Лісіцина Ірина Миколаївна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-comp-system/spivrobitnyky>
+{'department': "Кафедра математичного забезпечення комп'ютерних систем",
+ 'name': 'Максимов Олександр Семенович'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-comp-system/spivrobitnyky>
+{'department': "Кафедра математичного забезпечення комп'ютерних систем",
+ 'name': 'Малахов Євгеній Валерійович'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-comp-system/spivrobitnyky>
+{'department': "Кафедра математичного забезпечення комп'ютерних систем",
+ 'name': 'Пенко Валерій Гергійович'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-comp-system/spivrobitnyky>
+{'department': "Кафедра математичного забезпечення комп'ютерних систем",
+ 'name': 'Петрушина Тетяна Іванівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-comp-system/spivrobitnyky>
+{'department': "Кафедра математичного забезпечення комп'ютерних систем",
+ 'name': 'Розновець Ольга Ігорівна'}
+2023-05-22 11:42:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/math-comp-system/spivrobitnyky>
+{'department': "Кафедра математичного забезпечення комп'ютерних систем",
+ 'name': 'Шпінарева Ірина Михайлівна'}
+2023-05-22 11:42:26 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-spec-psyh/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-gen-psy-pers/spivrobitnyky> (referer: https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-22 11:42:26 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-spec-psyh/spivrobitnyky>: HTTP status code is not handled or not allowed
+2023-05-22 11:42:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-gen-psy-pers/spivrobitnyky>
+{'department': 'Кафедра загальної психології та психології розвитку '
+               'особистості',
+ 'name': 'Артюхіна Наталія Вікторівна'}
+2023-05-22 11:42:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-gen-psy-pers/spivrobitnyky>
+{'department': 'Кафедра загальної психології та психології розвитку '
+               'особистості',
+ 'name': 'Кіреєва Зоя Олександрівна'}
+2023-05-22 11:42:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-gen-psy-pers/spivrobitnyky>
+{'department': 'Кафедра загальної психології та психології розвитку '
+               'особистості',
+ 'name': 'Кокоріна Юлія Євгенівна'}
+2023-05-22 11:42:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-gen-psy-pers/spivrobitnyky>
+{'department': 'Кафедра загальної психології та психології розвитку '
+               'особистості',
+ 'name': 'Литвиненко Ольга Дмитрівна'}
+2023-05-22 11:42:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-gen-psy-pers/spivrobitnyky>
+{'department': 'Кафедра загальної психології та психології розвитку '
+               'особистості',
+ 'name': 'Мартинюк Юлія Олександрівна'}
+2023-05-22 11:42:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-gen-psy-pers/spivrobitnyky>
+{'department': 'Кафедра загальної психології та психології розвитку '
+               'особистості',
+ 'name': 'Мостова Тетяна Дмитрівна'}
+2023-05-22 11:42:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily/imem-gen-psy-pers/spivrobitnyky>
+{'department': 'Кафедра загальної психології та психології розвитку '
+               'особистості',
+ 'name': 'Чачко Світлана Леонідівна'}
+2023-05-22 11:42:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-05-22 11:42:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 35052,
+ 'downloader/request_count': 72,
+ 'downloader/request_method_count/GET': 72,
+ 'downloader/response_bytes': 593860,
+ 'downloader/response_count': 72,
+ 'downloader/response_status_count/200': 32,
+ 'downloader/response_status_count/404': 40,
+ 'elapsed_time_seconds': 3.905294,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 5, 22, 8, 42, 26, 563892),
+ 'httpcompression/response_bytes': 2564168,
+ 'httpcompression/response_count': 32,
+ 'httperror/response_ignored_count': 40,
+ 'httperror/response_ignored_status_count/404': 40,
+ 'item_scraped_count': 246,
+ 'log_count/DEBUG': 321,
+ 'log_count/INFO': 50,
+ 'request_depth_max': 2,
+ 'response_received_count': 72,
+ 'scheduler/dequeued': 72,
+ 'scheduler/dequeued/memory': 72,
+ 'scheduler/enqueued': 72,
+ 'scheduler/enqueued/memory': 72,
+ 'start_time': datetime.datetime(2023, 5, 22, 8, 42, 22, 658598)}
+2023-05-22 11:42:26 [scrapy.core.engine] INFO: Spider closed (finished)
