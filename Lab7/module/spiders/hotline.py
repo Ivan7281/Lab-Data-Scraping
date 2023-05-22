@@ -1,5 +1,4 @@
 import scrapy
-from bs4 import BeautifulSoup
 from module.items import HotlineItem
 
 
@@ -9,17 +8,23 @@ class HotlineSpider(scrapy.Spider):
     start_urls = [f"https://hotline.ua/ua/bt/holodilniki/?p={page}" for page in range(1, 5)]
 
     def parse(self, response):
-        soup = BeautifulSoup(response.body, "html.parser")
-        catalog = soup.find(name="div", class_="list-body__content").find_all(class_="list-item")
+        catalog = response.xpath('//div[contains(@class, "list-body__content")]').xpath('//div[contains(@class, "list-item list-item--column col-lg-4 col-sm-6 col-xs-12")]')
+
         for item in catalog:
-            name = item.find(name="a", class_="list-item__title").find(string=True, recursive=False).strip()
-            title = item.find(
-                name="div", class_="list-item__specifications-text").find(string=True, recursive=False).strip()
-            price = item.find(class_="price__value").find(string=True, recursive=False)
-            url = item.find(name="a", class_="list-item__title").get("href")
-            yield HotlineItem(
-                name=name,
-                price=price,
-                url=url,
-                title=title
+            url = item.xpath('.//a[@class="list-item__title text-md"]/@href').get()
+
+            yield scrapy.Request(
+                url=f"https://hotline.ua" + url,
+                callback=self.parse_hotline
             )
+
+    def parse_hotline(self, response):
+        product_name = response.xpath('//h1[contains(@class, "title__main")]/text()').get()
+        store_name = response.xpath('//div[1][@class="list__item row flex"]//a[@data-eventcategory="Pages Product Prices" and @class="shop__title"]/text()').get()
+        price = response.xpath('//div[1][@class="list__item row flex"]//span[@data-eventcategory="Pages Product Prices"]/span[@class="price__value"]/text()').get()
+
+        yield HotlineItem(
+            product_name=product_name,
+            store_name=store_name,
+            price=price
+        )

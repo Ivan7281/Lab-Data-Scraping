@@ -7,7 +7,6 @@ import scrapy
 
 
 class HotlineItem(scrapy.Item):
-    name = scrapy.Field()
+    product_name = scrapy.Field()
+    store_name = scrapy.Field()
     price = scrapy.Field()
-    url = scrapy.Field()
-    title = scrapy.Field()

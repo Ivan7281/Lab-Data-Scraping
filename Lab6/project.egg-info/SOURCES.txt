@@ -1,0 +1,14 @@
+setup.py
+Lab6/__init__.py
+Lab6/items.py
+Lab6/middlewares.py
+Lab6/pipelines.py
+Lab6/settings.py
+Lab6/spiders/__init__.py
+Lab6/spiders/onu.py
+Lab6/spiders/onu_css.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt

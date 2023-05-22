@@ -13,12 +13,3 @@ class ModulePipeline:
     def process_item(self, item, spider):
         return item
 
-
-class PricePipeline:
-    def process_item(self, item, spider):
-        try:
-            item["price"] = float(item.get("price").replace("\xa0", ""))
-            return item
-        except:
-            raise DropItem(f"Bad price in {item}")
-
