@@ -9,5 +9,6 @@ import scrapy
 class Module2Item(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    img = scrapy.Field()
     store_name = scrapy.Field()
     price = scrapy.Field()

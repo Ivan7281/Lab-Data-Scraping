@@ -51,7 +51,6 @@ DOWNLOAD_DELAY = 1
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    "module_2.pipelines.PricePipeline": 700,
     "module_2.middlewares.SeleniumMiddleware": 543,
     #"module_2.middlewares.Module2DownloaderMiddleware": 543,
 }
@@ -64,9 +63,10 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
+ITEM_PIPELINES = {
+    "module_2.pipelines.PricePipeline": 400,
 #    "module_2.pipelines.Module2Pipeline": 300,
-#}
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
