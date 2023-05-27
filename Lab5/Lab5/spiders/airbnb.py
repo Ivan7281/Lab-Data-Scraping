@@ -15,7 +15,7 @@ class AirbnbSpider(scrapy.Spider):
             yield SeleniumRequest(
                 url=url,
                 callback=self.parse,
-                wait_time=5000,
+                wait_time=500,
                 execute=self.close_banner
             )
 
