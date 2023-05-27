@@ -1,0 +1,578 @@
+2023-05-24 08:35:39 [scrapy.utils.log] INFO: Scrapy 2.8.0 started (bot: Lab6)
+2023-05-24 08:35:39 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 23.0.0 (OpenSSL 3.0.8 7 Feb 2023), cryptography 39.0.1, Platform Windows-10-10.0.19045-SP0
+2023-05-24 08:35:39 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Lab6',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs\\default\\onu\\cf661116f9f411ed9d5310e7c6773d21.log',
+ 'NEWSPIDER_MODULE': 'Lab6.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['Lab6.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-05-24 08:35:39 [asyncio] DEBUG: Using selector: SelectSelector
+2023-05-24 08:35:39 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-05-24 08:35:39 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-05-24 08:35:39 [scrapy.extensions.telnet] INFO: Telnet Password: b91b66961a5731d8
+2023-05-24 08:35:39 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-05-24 08:35:39 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-05-24 08:35:39 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-05-24 08:35:39 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-05-24 08:35:39 [scrapy.core.engine] INFO: Spider opened
+2023-05-24 08:35:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-05-24 08:35:39 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-05-24 08:35:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty> (referer: None)
+2023-05-24 08:35:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Біологічний факультет',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/biology'}
+2023-05-24 08:35:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Геолого-географічний факультет',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/ggf'}
+2023-05-24 08:35:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Економіко-правовий факультет',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/epf'}
+2023-05-24 08:35:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет історії та філософії',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/hist'}
+2023-05-24 08:35:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет журналістики, реклами та видавничої справи',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/journal'}
+2023-05-24 08:35:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет математики, фізики та інформаційних технологій',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmfit'}
+2023-05-24 08:35:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет міжнародних відносин, політології та соціології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmvps'}
+2023-05-24 08:35:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет психології та соціальної роботи',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/iipo'}
+2023-05-24 08:35:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет романо-германської філології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf'}
+2023-05-24 08:35:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Філологічний факультет',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/philolog'}
+2023-05-24 08:35:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty>
+{'name': 'Факультет хімїї та фармації',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/chem'}
+2023-05-24 08:35:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-24 08:35:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-24 08:35:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-24 08:35:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет хімїї та фармації',
+ 'name': 'Кафедра аналітичної та токсикологічної хімії',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/analytical'}
+2023-05-24 08:35:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-24 08:35:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-24 08:35:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-24 08:35:40 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/ggf/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-24 08:35:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "D:\Laboratories_programming\Python\Lab Data Scraping\Lab6\Lab6\spiders\onu.py", line 40, in parse_faculty
+    dep_name = a.find(string=True, recursive=False)
+AttributeError: 'NoneType' object has no attribute 'find'
+2023-05-24 08:35:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет математики, фізики та інформаційних технологій',
+ 'name': 'Кафедра диференціальних рівнянь, геометрії та топології',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation'}
+2023-05-24 08:35:41 [scrapy.core.scraper] ERROR: Spider error processing <GET https://onu.edu.ua/uk/structure/faculty/iipo/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "D:\Laboratories_programming\Python\Lab Data Scraping\Lab6\Lab6\spiders\onu.py", line 40, in parse_faculty
+    dep_name = a.find(string=True, recursive=False)
+AttributeError: 'NoneType' object has no attribute 'find'
+2023-05-24 08:35:41 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/analytical/staff> (referer: https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-24 08:35:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/ggf/kafedry-ta-inshi-strukturni-pidrozdily>: HTTP status code is not handled or not allowed
+2023-05-24 08:35:41 [scrapy.core.scraper] ERROR: Spider error processing <GET https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "D:\Laboratories_programming\Python\Lab Data Scraping\Lab6\Lab6\spiders\onu.py", line 40, in parse_faculty
+    dep_name = a.find(string=True, recursive=False)
+AttributeError: 'NoneType' object has no attribute 'find'
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет журналістики, реклами та видавничої справи',
+ 'name': 'Кафедра журналістики, реклами та медіакомунікацій',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-zhurnalistyky-reklamy-ta-mediakomunikatsii'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет міжнародних відносин, політології та соціології',
+ 'name': 'Кафедра міжнародних відносин',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Економіко-правовий факультет',
+ 'name': 'Кафедра адміністративного та господарського права',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/adm-right'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Біологічний факультет',
+ 'name': 'Кафедра ботаніки, фізіології рослин та садово-паркового господарства',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/botanic'}
+2023-05-24 08:35:41 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation/staff> (referer: https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-24 08:35:41 [scrapy.core.scraper] ERROR: Spider error processing <GET https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "D:\Laboratories_programming\Python\Lab Data Scraping\Lab6\Lab6\spiders\onu.py", line 40, in parse_faculty
+    dep_name = a.find(string=True, recursive=False)
+AttributeError: 'NoneType' object has no attribute 'find'
+2023-05-24 08:35:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/chem/kafedry-ta-inshi-strukturni-pidrozdily/analytical/staff>: HTTP status code is not handled or not allowed
+2023-05-24 08:35:41 [scrapy.core.scraper] ERROR: Spider error processing <GET https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "D:\Laboratories_programming\Python\Lab Data Scraping\Lab6\Lab6\spiders\onu.py", line 40, in parse_faculty
+    dep_name = a.find(string=True, recursive=False)
+AttributeError: 'NoneType' object has no attribute 'find'
+2023-05-24 08:35:41 [scrapy.core.scraper] ERROR: Spider error processing <GET https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "D:\Laboratories_programming\Python\Lab Data Scraping\Lab6\Lab6\spiders\onu.py", line 40, in parse_faculty
+    dep_name = a.find(string=True, recursive=False)
+AttributeError: 'NoneType' object has no attribute 'find'
+2023-05-24 08:35:41 [scrapy.core.scraper] ERROR: Spider error processing <GET https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "D:\Laboratories_programming\Python\Lab Data Scraping\Lab6\Lab6\spiders\onu.py", line 40, in parse_faculty
+    dep_name = a.find(string=True, recursive=False)
+AttributeError: 'NoneType' object has no attribute 'find'
+2023-05-24 08:35:41 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/botanic/staff> (referer: https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-24 08:35:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/fmfit/kafedry-ta-inshi-strukturni-pidrozdily/imem-differ-equation/staff>: HTTP status code is not handled or not allowed
+2023-05-24 08:35:41 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/adm-right/staff> (referer: https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-24 08:35:41 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-zhurnalistyky-reklamy-ta-mediakomunikatsii/staff> (referer: https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-24 08:35:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/biology/kafedry-ta-inshi-strukturni-pidrozdily/botanic/staff>: HTTP status code is not handled or not allowed
+2023-05-24 08:35:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff> (referer: https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-24 08:35:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/epf/kafedry-ta-inshi-strukturni-pidrozdily/adm-right/staff>: HTTP status code is not handled or not allowed
+2023-05-24 08:35:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/journal/kafedry-ta-inshi-strukturni-pidrozdily/kafedra-zhurnalistyky-reklamy-ta-mediakomunikatsii/staff>: HTTP status code is not handled or not allowed
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Брусиловська Ольга Іллівна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Вакарчук Катерина Василівна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин', 'name': 'Велика Ольга Василівна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Відімська Катерина Ігорівна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Вожиловська Анастасія Сергіївна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Войтович Олексій Іванович'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Волкова Яна Олександрівна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Глебов Віктор Вікторович'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Глебов Сергій Володимирович'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Грабіна Ганна Вікторівна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Дубовик Володимир Алімович'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Захарченко Алла Миколаївна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Зубаренко Ірина Валеріївна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Коваль Ігор Миколайович'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Комяга Катерина Анатоліївна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Кузьмін Денис Валерійович'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Кулешова Карина Ігорівна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Майстренко Юлія Іванівна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Максименко Ірина Володимирівна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Малахіті Андрій Васильович'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Мігдальський Данил Ілліч'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Мініахметова Ельвіра Хафізівна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Насіківська Віра Миколаївна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Побле Дмитро Костянтинович'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Покась Михайло Сергійович'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Рижих Володимир Іванович'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Романова Ольга Володимирівна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Сіновець Поліна Андріївна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин',
+ 'name': 'Сніговська Оксана Володимирівна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин', 'name': 'Тарасюк Юлія Матвіївна'}
+2023-05-24 08:35:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/fmvps/kafedry-ta-inshi-strukturni-pidrozdily/interrelations/staff>
+{'department': 'Кафедра міжнародних відносин', 'name': 'Шаглі Ганна Іванівна'}
+2023-05-24 08:35:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-24 08:35:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-24 08:35:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+2023-05-24 08:35:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Філологічний факультет',
+ 'name': 'Кафедра загального та слов’янського мовознавства',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/genlang'}
+2023-05-24 08:35:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет романо-германської філології',
+ 'name': 'Кафедра граматики англійської мови',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng'}
+2023-05-24 08:35:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily>
+{'faculty': 'Факультет історії та філософії',
+ 'name': 'Кафедра археології та етнології України',
+ 'url': 'https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/arhch'}
+2023-05-24 08:35:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "D:\Laboratories_programming\Python\Lab Data Scraping\Lab6\Lab6\spiders\onu.py", line 40, in parse_faculty
+    dep_name = a.find(string=True, recursive=False)
+AttributeError: 'NoneType' object has no attribute 'find'
+2023-05-24 08:35:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "D:\Laboratories_programming\Python\Lab Data Scraping\Lab6\Lab6\spiders\onu.py", line 40, in parse_faculty
+    dep_name = a.find(string=True, recursive=False)
+AttributeError: 'NoneType' object has no attribute 'find'
+2023-05-24 08:35:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily> (referer: https://onu.edu.ua/uk/structure/faculty)
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "D:\Laboratories_programming\Python\Lab Data Scraping\Lab6\Lab6\spiders\onu.py", line 40, in parse_faculty
+    dep_name = a.find(string=True, recursive=False)
+AttributeError: 'NoneType' object has no attribute 'find'
+2023-05-24 08:35:42 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/genlang/staff> (referer: https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-24 08:35:42 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/arhch/staff> (referer: https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-24 08:35:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng/staff> (referer: https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily)
+2023-05-24 08:35:42 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/philolog/kafedry-ta-inshi-strukturni-pidrozdily/genlang/staff>: HTTP status code is not handled or not allowed
+2023-05-24 08:35:42 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://onu.edu.ua/uk/structure/faculty/hist/kafedry-ta-inshi-strukturni-pidrozdily/arhch/staff>: HTTP status code is not handled or not allowed
+2023-05-24 08:35:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng/staff>
+{'department': 'Кафедра граматики англійської мови',
+ 'name': 'Варбанець Тетяна Вікторівна'}
+2023-05-24 08:35:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng/staff>
+{'department': 'Кафедра граматики англійської мови',
+ 'name': 'Васильєва Ольга Олександрівна'}
+2023-05-24 08:35:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng/staff>
+{'department': 'Кафедра граматики англійської мови',
+ 'name': 'Жук Валентина Аркадьевна'}
+2023-05-24 08:35:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng/staff>
+{'department': 'Кафедра граматики англійської мови',
+ 'name': 'Карпенко Максим Юрійович'}
+2023-05-24 08:35:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng/staff>
+{'department': 'Кафедра граматики англійської мови',
+ 'name': 'Карпенко Олена Юріївна'}
+2023-05-24 08:35:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng/staff>
+{'department': 'Кафедра граматики англійської мови',
+ 'name': 'Лимаренко Олена Анатоліївна'}
+2023-05-24 08:35:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng/staff>
+{'department': 'Кафедра граматики англійської мови',
+ 'name': 'Мойсеєнко Наталія Григорівна'}
+2023-05-24 08:35:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng/staff>
+{'department': 'Кафедра граматики англійської мови',
+ 'name': 'Морозова Ірина Борисівна'}
+2023-05-24 08:35:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng/staff>
+{'department': 'Кафедра граматики англійської мови',
+ 'name': 'Пожарицька Олена Олександрівна'}
+2023-05-24 08:35:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://onu.edu.ua/uk/structure/faculty/rgf/kafedry-ta-inshi-strukturni-pidrozdily/grameng/staff>
+{'department': 'Кафедра граматики англійської мови',
+ 'name': 'Сосницький Ігор Олександрович'}
+2023-05-24 08:35:42 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-05-24 08:35:42 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 9407,
+ 'downloader/request_count': 21,
+ 'downloader/request_method_count/GET': 21,
+ 'downloader/response_bytes': 236813,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 13,
+ 'downloader/response_status_count/404': 8,
+ 'elapsed_time_seconds': 2.597516,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 5, 24, 5, 35, 42, 561388),
+ 'httpcompression/response_bytes': 1118120,
+ 'httpcompression/response_count': 13,
+ 'httperror/response_ignored_count': 8,
+ 'httperror/response_ignored_status_count/404': 8,
+ 'item_scraped_count': 61,
+ 'log_count/DEBUG': 85,
+ 'log_count/ERROR': 10,
+ 'log_count/INFO': 18,
+ 'request_depth_max': 2,
+ 'response_received_count': 21,
+ 'scheduler/dequeued': 21,
+ 'scheduler/dequeued/memory': 21,
+ 'scheduler/enqueued': 21,
+ 'scheduler/enqueued/memory': 21,
+ 'spider_exceptions/AttributeError': 10,
+ 'start_time': datetime.datetime(2023, 5, 24, 5, 35, 39, 963872)}
+2023-05-24 08:35:42 [scrapy.core.engine] INFO: Spider closed (finished)
